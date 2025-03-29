@@ -9,5 +9,12 @@ class SlideshowViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
         value = "This is slideshow Fragment"
     }
+
+
+    private val _textnew= MutableLiveData<String>()
+    init {
+        _textnew.value = "This is slideshow Fragment new"
+    }
+
     val text: LiveData<String> = _text
 }
