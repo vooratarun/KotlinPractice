@@ -11,6 +11,9 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.kotlinpractice.basicviews.BasicViewsActivity
 import com.example.kotlinpractice.bottomnav.BottomNavActivity
 import com.example.kotlinpractice.drawerprac.NaigationDrawerActivity
+import com.example.kotlinpractice.loginlogout.HomeActivity
+import com.example.kotlinpractice.loginlogout.LoginActivity
+import com.example.kotlinpractice.loginlogout.SharedPrefHelper
 import com.example.kotlinpractice.rating.RatingActivity
 import com.example.kotlinpractice.retro.RetrofitActivity
 import com.example.kotlinpractice.retromvvm.RetrofitMVVMActivity
@@ -19,6 +22,9 @@ import com.example.kotlinpractice.scrolling.ScrollingActivity
 import com.example.kotlinpractice.tabbedviews.TabbedViewsActivity
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var sharedPrefHelper: SharedPrefHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -82,6 +88,16 @@ class MainActivity : AppCompatActivity() {
             val intentnew = Intent(this, RetrofitMVVMActivity::class.java);
             startActivity(intentnew);
         })
+
+
+//        sharedPrefHelper = SharedPrefHelper(this);
+//
+//        if (sharedPrefHelper.isLoggedIn()) {
+//            startActivity(Intent(this, HomeActivity::class.java))
+//        } else {
+//            startActivity(Intent(this, LoginActivity::class.java))
+//        }
+//        finish()
 
     }
 }

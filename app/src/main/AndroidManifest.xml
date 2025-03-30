@@ -22,6 +22,15 @@
         android:theme="@style/Theme.KotlinPractice"
         tools:targetApi="31">
         <activity
+            android:name=".loginlogout.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginlogout.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpref.SharedPrefActivity"
+            android:exported="false" />
+        <activity
             android:name=".retromvvm.RetrofitMVVMActivity"
             android:exported="false" />
         <activity
