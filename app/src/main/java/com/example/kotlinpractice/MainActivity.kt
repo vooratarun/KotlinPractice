@@ -11,7 +11,12 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.kotlinpractice.basicviews.BasicViewsActivity
 import com.example.kotlinpractice.bottomnav.BottomNavActivity
 import com.example.kotlinpractice.drawerprac.NaigationDrawerActivity
+import com.example.kotlinpractice.rating.RatingActivity
+import com.example.kotlinpractice.retro.RetrofitActivity
+import com.example.kotlinpractice.retromvvm.RetrofitMVVMActivity
+import com.example.kotlinpractice.retrouser.RetrouserActivity
 import com.example.kotlinpractice.scrolling.ScrollingActivity
+import com.example.kotlinpractice.tabbedviews.TabbedViewsActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +50,36 @@ class MainActivity : AppCompatActivity() {
         val scrolling = findViewById<Button>(R.id.scrolling);
         scrolling.setOnClickListener(View.OnClickListener {
             val intentnew = Intent(this, ScrollingActivity::class.java);
+            startActivity(intentnew);
+        })
+
+        val tabbedviews = findViewById<Button>(R.id.tabbedviews);
+        tabbedviews.setOnClickListener(View.OnClickListener {
+            val intentnew = Intent(this, TabbedViewsActivity::class.java);
+            startActivity(intentnew);
+        })
+
+        val rating = findViewById<Button>(R.id.rating);
+        rating.setOnClickListener(View.OnClickListener {
+            val intentnew = Intent(this, RatingActivity::class.java);
+            startActivity(intentnew);
+        })
+
+        val retrofit = findViewById<Button>(R.id.retrofit);
+        retrofit.setOnClickListener(View.OnClickListener {
+            val intentnew = Intent(this, RetrofitActivity::class.java);
+            startActivity(intentnew);
+        })
+
+        val retroUser = findViewById<Button>(R.id.retrouser);
+        retroUser.setOnClickListener(View.OnClickListener {
+            val intentnew = Intent(this, RetrouserActivity::class.java);
+            startActivity(intentnew);
+        })
+
+        val retroMvvm = findViewById<Button>(R.id.retromvvm);
+        retroMvvm.setOnClickListener(View.OnClickListener {
+            val intentnew = Intent(this, RetrofitMVVMActivity::class.java);
             startActivity(intentnew);
         })
 

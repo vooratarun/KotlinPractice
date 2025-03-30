@@ -27,4 +27,17 @@
     <style name="Theme.KotlinPractice.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.KotlinPractice.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.KotlinPractice.Fullscreen" parent="Theme.KotlinPractice">
+        <item name="android:actionBarStyle">
+            @style/Widget.Theme.KotlinPractice.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.KotlinPractice.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
 </resources>
