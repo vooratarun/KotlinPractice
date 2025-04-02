@@ -57,11 +57,16 @@ dependencies {
     implementation(libs.preference)
     implementation(libs.retrofit)
     implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+
     implementation(libs.gson)
     implementation(libs.converter.gson)
     implementation(libs.viewpager2)
     implementation(libs.core.ktx)
     testImplementation(libs.junit)
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation("androidx.paging:paging-runtime:3.2.0")
+
 //    androidTestImplementation(libs.ext.junit)
 //    androidTestImplementation(libs.espresso.core)
 

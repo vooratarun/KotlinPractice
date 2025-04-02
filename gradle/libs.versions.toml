@@ -46,6 +46,8 @@ converter-gson = {module = "com.squareup.retrofit2:converter-gson", version.ref=
 viewpager2 = {module = "androidx.viewpager2:viewpager2", version.ref= "viewpager2"}
 
 coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android= { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerviewVersion" }
 
