@@ -14,6 +14,7 @@ import com.example.kotlinpractice.drawerprac.NaigationDrawerActivity
 import com.example.kotlinpractice.loginlogout.HomeActivity
 import com.example.kotlinpractice.loginlogout.LoginActivity
 import com.example.kotlinpractice.loginlogout.SharedPrefHelper
+import com.example.kotlinpractice.mvvmcompose.SampleComposeActivity
 import com.example.kotlinpractice.mvvmcoroutine.MvvmCoroutineActivity
 import com.example.kotlinpractice.rating.RatingActivity
 import com.example.kotlinpractice.retro.RetrofitActivity
@@ -93,6 +94,12 @@ class MainActivity : AppCompatActivity() {
         val mvvmCoroutine = findViewById<Button>(R.id.mvvmcoroutine);
         mvvmCoroutine.setOnClickListener(View.OnClickListener {
             val intentnew = Intent(this, MvvmCoroutineActivity::class.java);
+            startActivity(intentnew);
+        })
+
+        val mvvmCompose = findViewById<Button>(R.id.mvvmcompose);
+        mvvmCompose.setOnClickListener(View.OnClickListener {
+            val intentnew = Intent(this, SampleComposeActivity::class.java);
             startActivity(intentnew);
         })
 
